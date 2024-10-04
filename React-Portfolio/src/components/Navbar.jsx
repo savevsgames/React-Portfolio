@@ -4,12 +4,12 @@ const Navbar = () => {
   const currentPage = useLocation().pathname;
   return (
     <nav className="bg-white">
-      <div className="mx-auto max-w-7xl px-8 py-2 flex flex-col sm:flex-row sm-gap-x-16 sm:items-center sm:py-8">
+      <div className="mx-auto max-w-7xl px-8 py-2 flex flex-col justify-between sm:flex-row sm-gap-x-16 sm:items-center sm:py-8">
         <h2 className="text-3xl font-bold">
           <span className="text-sky-900">FULL-STACK </span> web-dev
         </h2>
         <div className="flex gap-3 ml-8">
-          <ul className="nav nav-tabs">
+          <ul className="flex flex-row gap-4 text-sky-950 font-bold">
             <li className="nav-item">
               <Link
                 to="/"

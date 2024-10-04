@@ -7,6 +7,10 @@ export const hero = {
   img: "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 };
 
+export const defaultImg = {
+  img: "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+};
+
 export const skills = [
   {
     id: 1,

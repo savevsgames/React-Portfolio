@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <section className="bg-white">
       <h2 className="text-3xl alignment-class text-sky-950 bg-white py-4 font-bold tracking-widest">
-        Skilled In...
+        My Development Toolkit
       </h2>
 
       <div className="alignment-class bg-white py-4">
