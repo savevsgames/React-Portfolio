@@ -5,9 +5,10 @@ import { FaCss3Alt, FaGithub } from "react-icons/fa6";
 
 export const links = [
   { id: 1, href: "#home", text: "home" },
-  { id: 2, href: "#about", text: "about" },
-  { id: 3, href: "#skills", text: "skills" },
-  { id: 4, href: "#projects", text: "projects" },
+  { id: 2, href: "#aboutme", text: "about me" },
+  { id: 3, href: "#portfolio", text: "portfolio" },
+  { id: 4, href: "#contact", text: "contact" },
+  { id: 5, href: "#resume", text: "resume" },
 ];
 
 export const hero = {
