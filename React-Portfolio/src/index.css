@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom css class for ensuring whole-page alignment without repetition */
+@layer components {
+  .alignment-class {
+    @apply mx-auto max-w-7xl px-8 grid md:grid-cols-2 items-center gap-8;
+  }
+}

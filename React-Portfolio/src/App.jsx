@@ -1,11 +1,13 @@
 import Navbar from "./components/Navbar";
-import HeroImg from "./components/HeroImg";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <HeroImg />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 };

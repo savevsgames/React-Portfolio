@@ -3,14 +3,6 @@ import { SiTypescript } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaCss3Alt, FaGithub } from "react-icons/fa6";
 
-export const links = [
-  { id: 1, href: "#home", text: "home" },
-  { id: 2, href: "#aboutme", text: "about me" },
-  { id: 3, href: "#portfolio", text: "portfolio" },
-  { id: 4, href: "#contact", text: "contact" },
-  { id: 5, href: "#resume", text: "resume" },
-];
-
 export const hero = {
   img: "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 };
@@ -21,8 +13,14 @@ export const skills = [
     title: "HTML&CSS",
     icon: (
       <span className="flex flex-row">
-        <FaHtml5 className="h-12 w-12 text-sky-950" />
-        <FaCss3Alt className="h-12 w-12 text-sky-950" />
+        <FaHtml5 className="text-slate-500 h-8 w-8" />
+        <FaCss3Alt className="text-slate-500 h-8 w-8" />
+      </span>
+    ),
+    icon2: (
+      <span className="flex flex-row">
+        <FaHtml5 className="text-sky-950 h-16 w-16" />
+        <FaCss3Alt className="text-sky-950 h-16 w-16" />
       </span>
     ),
     text: "Artistic and creative design skills, with a focus on responsive web design and a strong understanding of web standards and best practices",
@@ -30,37 +28,43 @@ export const skills = [
   {
     id: 2,
     title: "Javascript",
-    icon: <FaJs className="h-12 w-12 text-sky-950" />,
+    icon: <FaJs className="text-slate-500 h-8 w-8" />,
+    icon2: <FaJs className="text-sky-950 h-16 w-16" />,
     text: "I love JavaScript, and I have a strong understanding of the language. I enjoy making the web interactive and dynamic in creative ways.",
   },
   {
     id: 3,
     title: "Typescript",
-    icon: <SiTypescript className="h-12 w-12 text-sky-950" />,
+    icon: <SiTypescript className=" text-slate-500 h-8 w-8" />,
+    icon2: <SiTypescript className=" text-sky-950 h-16 w-16" />,
     text: "I have a strong understanding of TypeScript, and I enjoy using it to write clean, maintainable code with fewer bugs.",
   },
   {
     id: 4,
     title: "React",
-    icon: <FaReact className="h-12 w-12 text-sky-950" />,
+    icon: <FaReact className=" text-slate-500 h-8 w-8" />,
+    icon2: <FaReact className=" text-sky-950 h-16 w-16" />,
     text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
   },
   {
     id: 5,
     title: "Python",
-    icon: <FaPython className="h-12 w-12 text-sky-950" />,
+    icon: <FaPython className=" text-slate-500 h-8 w-8" />,
+    icon2: <FaPython className=" text-sky-950 h-16 w-16" />,
     text: "I enjoy writing algorithms and coding arduino projects in Python. I have a strong understanding of the language and its libraries.",
   },
   {
     id: 6,
-    title: "PostgreSQL FaGithub",
-    icon: <BiLogoPostgresql className="h-12 w-12 text-sky-950" />,
+    title: "PostgreSQL",
+    icon: <BiLogoPostgresql className="text-slate-500 h-8 w-8" />,
+    icon2: <BiLogoPostgresql className="text-sky-950 h-16 w-16" />,
     text: "I have experience with PostgreSQL, and cloud-based databases. I enjoy 3NF database design and writing efficient queries.",
   },
   {
     id: 7,
     title: "Github",
-    icon: <FaGithub className="h-12 w-12 text-sky-950" />,
+    icon: <FaGithub className="text-slate-500 h-8 w-8" />,
+    icon2: <FaGithub className="text-sky-950 h-16 w-16" />,
     text: "I use GitHub for version control and collaboration. I enjoy contributing to open-source projects and the idea of sharing my code with the community.",
   },
 ];
