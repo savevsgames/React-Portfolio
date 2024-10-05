@@ -123,3 +123,45 @@ export const projects = [
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
   },
 ];
+
+export const about = [
+  {
+    id: 1,
+    heading: `Hi, I'm Greg Barker. I am a motivated and enthusiastic web designer, dedicated to delivering high-quality websites and development projects.`,
+    content: [
+      `I am able to communicate effectively with clients and team members, ensuring a productive and consistent workflow.`,
+      `I am eager to collaborate with skilled and dedicated professionals to further enhance technical skills and industry practices.`,
+    ],
+    image: defaultImg,
+    imageInfo: "Greg Barker",
+  },
+  {
+    id: 2,
+    heading: `Coding has become a gateway that is helping me bridge the gap between my creative and technical skills.`,
+    content: [
+      `I started coding in high school but did not pursue it as a career. Instead I followed a path that led me to becoming a Master Electrician and running projects. I have always enjoyed learning systems and how they work. I am a natural problem solver and as technology advanced I found myself drawn to learning to code again. I started independently by doing online tutorials in hopes that I would be able to create a game. I caught the coding bug and took on the challenge of designing a website for a friend to replace their Shopify page. When things started to click I decided to take the plunge and enroll in the EdX Full-Stack Developer Coding Bootcamp. I am excited to see where this journey takes me.`,
+    ],
+    image: defaultImg,
+    imageInfo: "Greg Barker",
+  },
+  {
+    id: 3,
+    heading: `Creativity and Technology have always been a part of my life.`,
+    content: [
+      `I am a musician and have played guitar for over 25 years now. I ran a recording studio for a few years and recorded songs for local artists and bands and live shows. I love recording and mixing music on old analog gear.`,
+      `I am an amateur commercial photographer and have successfully created profitable Amazon listings with my photos. I enjoy using Abode Creative cloud programs to craft visually intriguing images and add them to my digital projects. I have created advertisements for social media and websites for local businesses.`,
+    ],
+    image: defaultImg,
+    imageInfo: "Greg Barker",
+  },
+  {
+    id: 4,
+    heading: `I am a World Builder.`,
+    content: [
+      `I am an amateur writer and working on a novel that has slowly adapted itself into becoming a game instead. I call it Shadowtide Island and when I have extra time, or need a recharge, I work on it. I am eager to share it with people.`,
+      `I have many ideas and interests, and I am always looking for new ways to learn and grow. I am excited for the journey ahead and all the advancements in technology that I will be able to harness. The future is now.`,
+    ],
+    image: defaultImg,
+    imageInfo: "Greg Barker",
+  },
+];
