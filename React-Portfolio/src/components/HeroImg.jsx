@@ -1,9 +1,9 @@
 import { hero } from "../assets/data";
-import { skills } from "../assets/data";
+import { socials } from "../assets/data";
 
 const HeroImg = () => {
   return (
-    <div className="bg-sky-100" style={{ position: "relative" }}>
+    <div className="bg-sky-100 mx-4" style={{ position: "relative" }}>
       <div className="alignment-class">
         <article className="text-3xl text-left">
           <h1 className="text-5xl text-sky-950 font-bold tracking-widest">
@@ -14,18 +14,18 @@ const HeroImg = () => {
           </p>
           <div className="flex gap-4 mt-8">
             <ul className="flex flex-row gap-2 flex-wrap basis-3/4 mt-8">
-              {skills.map((skill) => {
-                const { id, icon } = skill;
+              {socials.map((social) => {
+                const { id, icon } = social;
                 return (
                   <li key={id} className="text-sky-900">
-                    <icon className="h-16 w-16">{icon}</icon>
+                    <icon>{icon}</icon>
                   </li>
                 );
               })}
             </ul>
           </div>
         </article>
-        <article>
+        <article className="flex items-center justify-center">
           <img
             src={hero.img}
             alt="Web Developer Station"

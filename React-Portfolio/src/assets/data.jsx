@@ -1,10 +1,17 @@
-import { FaHtml5, FaJs, FaReact, FaPython } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaJs,
+  FaReact,
+  FaPython,
+  FaInstagramSquare,
+  FaLinkedin,
+} from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaCss3Alt, FaGithub } from "react-icons/fa6";
 
 export const hero = {
-  img: "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  img: "/images/gregwebavatar_angled.png",
 };
 
 export const defaultImg = {
@@ -133,8 +140,8 @@ export const about = [
       `I am able to communicate effectively with clients and team members, ensuring a productive and consistent workflow.`,
       `I am eager to collaborate with skilled and dedicated professionals to further enhance technical skills and industry practices.`,
     ],
-    image: "/images/greg.png",
-    imageInfo: "Greg Barker",
+    image: "/images/gregwebavatar_portrait.png",
+    imageInfo: "AI version of Me - Greg Barker",
   },
   {
     id: 2,
@@ -142,9 +149,9 @@ export const about = [
     content: [
       `I started coding in high school but did not pursue it as a career. Instead I followed a path that led me to becoming a Master Electrician and running projects. I have always enjoyed learning systems and how they work. I am a natural problem solver and as technology advanced I found myself drawn to learning to code again. I started independently by doing online tutorials in hopes that I would be able to create a game. I caught the coding bug and took on the challenge of designing a website for a friend to replace their Shopify page. When things started to click I decided to take the plunge and enroll in the EdX Full-Stack Developer Coding Bootcamp. I am excited to see where this journey takes me.`,
     ],
-    image: "/images/bmocenter.png",
+    image: "/images/gregwebavatar_electrician.png",
     imageInfo:
-      "One of the projects I enjoyed most was working as the electrical foreman for the renovation of the historic BMO Center in Calgary, AB.",
+      "Becoming a Master Electrician was a journey that taught me a lot; about people and systems. I am grateful for the experience.",
   },
   {
     id: 3,
@@ -153,8 +160,9 @@ export const about = [
       `I am a musician and have played guitar for over 25 years now. I ran a recording studio for a few years and recorded songs for local artists and bands and live shows. In 2018 I released an album called 'Love, Hope, Time & Soul' with my band 'The Heartwarming Skeletons'.`,
       `I am an amateur commercial photographer and have successfully created profitable Amazon listings with my photos. I enjoy using Abode Creative cloud programs to craft visually intriguing images and add them to my digital projects. I have created advertisements for social media and websites for local businesses.`,
     ],
-    image: "/images/heartwarmingskeletons-lhts.png",
-    imageInfo: "Greg Barker",
+    image: "/images/gregwebavatar_recording.png",
+    imageInfo:
+      "Before AI could make pictures like this and fix poor musicianship, I was a self-taught recording engineer.",
   },
   {
     id: 4,
@@ -163,7 +171,29 @@ export const about = [
       `I am an amateur writer and working on a novel that has slowly adapted itself into becoming a game instead. I call it Shadowtide Island and when I have extra time, or need a recharge, I work on it. I am eager to share it with people.`,
       `I have many ideas and interests, and I am always looking for new ways to learn and grow. I am excited for the journey ahead and all the advancements in technology that I will be able to harness. The future is now.`,
     ],
-    image: "/images/shadowtidekeep-screenshot.png",
-    imageInfo: "Greg Barker",
+    image: "/images/gregwebavatar_coffeeandcode.png",
+    imageInfo:
+      "I love to write and code. Caffeine makes the perfect companion.",
+  },
+];
+
+export const socials = [
+  {
+    id: 1,
+    name: "GitHub",
+    url: "https://github.com/savevsgames",
+    icon: <FaGithub className="sm:h-24 sm:w-24 md:h-32 md:w-32" />,
+  },
+  {
+    id: 2,
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/greg-barker-1a2b3b4/",
+    icon: <FaLinkedin className="sm:h-24 sm:w-24 md:h-32 md:w-32" />,
+  },
+  {
+    id: 3,
+    name: "Instagram",
+    url: "https://www.instagram.com/savevsgames/",
+    icon: <FaInstagramSquare className="sm:h-24 sm:w-24 md:h-32 md:w-32" />,
   },
 ];
