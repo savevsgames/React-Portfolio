@@ -1,4 +1,19 @@
+import { projects } from "../assets/data";
+import PortfolioCard from "../components/PortfolioCard";
+
 const Portfolio = () => {
-  return <div>Portfolio</div>;
+  return (
+    <section className="bg-sky-100">
+      <h2 className="text-3xl alignment-class text-sky-950 py-4 font-bold tracking-widest">
+        Some of My Projects
+      </h2>
+
+      <div className="alignment-class bg-sky-100 py-4">
+        {projects.map((project) => {
+          return <PortfolioCard key={project.id} {...project} />;
+        })}
+      </div>
+    </section>
+  );
 };
 export default Portfolio;
