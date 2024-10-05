@@ -21,14 +21,16 @@ const AboutCard = (aboutInfo) => {
         <p className="text-lg font-bold p-4">{heading}</p>
         <div className="bg-white px-8 py-4 rounded-xl border-2 border-slate-500">
           <img
-            src={image.img}
+            src={image}
             alt="Greg Barker"
-            className="border-2 border-slate-500 rounded-xl shadow-xl max-w-1/4"
+            className="border-2 border-slate-500 rounded-xl shadow-xl w-full"
           />
           <p className="text-lg font-bold p-4">{imageInfo}</p>
 
           {content.map((item, index) => (
-            <p key={index} className="text-lg p-4">{item}</p>
+            <p key={index} className="text-lg p-4">
+              {item}
+            </p>
           ))}
         </div>
       </div>
