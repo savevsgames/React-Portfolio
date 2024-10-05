@@ -4,11 +4,11 @@ const AboutMe = () => {
   return (
     <section className="bg-sky-100">
       <div className="alignment-class flex flex-col gap-6">
-        <h3 className="text-3xl text-sky-950 py-4 font-bold tracking-widest">
+        <h3 className="text-3xl text-sky-950 py-4 font-bold tracking-widest mr-auto border-2 border-slate-500 px-8 rounded-xl bg-white shadow-xl">
           About Me
         </h3>
         <article className="flex flex-row justify-between">
-          <div className="bg-white border-2 border-slate-500 rounded-xl p-4 w-full">
+          <div className="bg-white border-2 border-slate-500 rounded-xl p-4 w-full shadow-xl">
             <p className="text-lg font-bold p-4">
               Hi, I&apos;m Greg Barker. I am a motivated and enthusiastic web
               designer, dedicated to delivering high-quality websites and
@@ -59,12 +59,13 @@ const AboutMe = () => {
               I am an amateur writer and working on a novel that has slowly
               adapted itself into becoming a game instead. I call it Shadowtide
               Island and when I have extra time, or need a recharge, I work on
-              it. I am very excited to share it with people.
+              it. I am eager to share it with people.
             </p>
             <p className="text-lg p-4">
               I have many ideas and interests, and I am always looking for new
-              ways to learn and grow. I am excited to see where this coding
-              journey takes me.
+              ways to learn and grow. I am excited for the journey ahead and all
+              the advancements in technology that I will be able to harness. The
+              future is now.
             </p>
           </div>
           <div className="w-full bg-sky-100 flex flex-col justify-around gap-16 p-16">

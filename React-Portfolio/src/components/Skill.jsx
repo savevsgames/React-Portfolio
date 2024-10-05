@@ -5,7 +5,7 @@ const Skill = (skill) => {
   return (
     <article
       key={id}
-      className="border-slate-500 border-2 rounded-xl p-4 h-48 bg-sky-100 shadow-xl"
+      className="border-slate-500 border-2 rounded-xl p-4 h-48 bg-white shadow-xl"
       style={{ position: "relative" }}
     >
       <icon>{icon2}</icon>

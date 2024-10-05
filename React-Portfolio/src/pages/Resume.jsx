@@ -3,8 +3,8 @@ import Downloadable from "../components/Downloadable";
 
 const Resume = () => {
   return (
-    <div>
-     <Downloadable />
+    <div className="bg-sky-100">
+      <Downloadable />
       <Skills />
     </div>
   );
