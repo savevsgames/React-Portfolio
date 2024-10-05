@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="bg-sky-100">
         <Outlet />
       </main>
       <Footer />
