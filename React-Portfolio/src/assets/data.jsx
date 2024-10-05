@@ -182,18 +182,18 @@ export const socials = [
     id: 1,
     name: "GitHub",
     url: "https://github.com/savevsgames",
-    icon: <FaGithub className="sm:h-24 sm:w-24 md:h-32 md:w-32" />,
+    icon: <FaGithub className="sm:h-16 sm:w-16 md:h-24 md:w-24" />,
   },
   {
     id: 2,
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/greg-barker-1a2b3b4/",
-    icon: <FaLinkedin className="sm:h-24 sm:w-24 md:h-32 md:w-32" />,
+    url: "https://www.linkedin.com/in/greg-barker-savevsgames",
+    icon: <FaLinkedin className="sm:h-16 sm:w-16 md:h-24 md:w-24" />,
   },
   {
     id: 3,
     name: "Instagram",
     url: "https://www.instagram.com/savevsgames/",
-    icon: <FaInstagramSquare className="sm:h-24 sm:w-24 md:h-32 md:w-32" />,
+    icon: <FaInstagramSquare className="sm:h-16 sm:w-16 md:h-24 md:w-24" />,
   },
 ];

@@ -10,7 +10,6 @@ const AboutMe = () => {
         </h3>
         <article className="grid md:grid-cols-2 sm:grid-cols-1 gap-6">
           {about.map((aboutInfo) => {
-            console.log(about);
             return <AboutCard key={aboutInfo.id} {...aboutInfo} />;
           })}
         </article>

@@ -17,9 +17,11 @@ const HeroImg = () => {
               {socials.map((social) => {
                 const { id, icon } = social;
                 return (
-                  <li key={id} className="text-sky-900">
-                    <icon>{icon}</icon>
-                  </li>
+                  <a href={social.url} key={id} className="text-sky-900">
+                    <li key={id} className="text-sky-900">
+                      <span>{icon}</span>
+                    </li>
+                  </a>
                 );
               })}
             </ul>

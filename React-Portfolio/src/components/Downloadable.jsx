@@ -26,9 +26,9 @@ const Downloadable = () => {
           >
             {" "}
             Greg Barker&apos;s Resume
-            <icon>
+            <span>
               <FaFileDownload className="w-8 h-8 text-sky-950" />
-            </icon>
+            </span>
           </button>
         </p>
       </section>
