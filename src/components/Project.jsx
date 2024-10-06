@@ -14,6 +14,7 @@ const Project = (project) => {
 
   return (
     <article
+      id="projects-div"
       style={{
         position: "relative",
         backgroundImage: `url(${img})`,
@@ -21,6 +22,7 @@ const Project = (project) => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         zIndex: "2",
+        flexBasis: "auto",
       }}
       key={id}
       className="border-slate-500 border-2 rounded-xl p-4 bg-white shadow-xl hover:bg-slate-200"
@@ -40,22 +42,25 @@ const Project = (project) => {
           zIndex: "-1",
         }}
       ></div>
-      <h3 className="text-xl font-bold">{title}</h3>
+      <h3 className="text-xl font-bold text-wrap">{title}</h3>
 
       <img
         src={img}
         alt={title}
-        className="h-24 w-36 border-slate-500 border-2 rounded-xl my-4"
+        className="border-slate-500 border-2 rounded-xl my-4 mx-auto w-3/5"
       />
-      <p className="p-2">
-        <span className="font-bold">GitHub:</span> <a href={github}>{github}</a>
+      <p className="p-2 text-wrap">
+        <span className="font-bold text-wrap">GitHub:</span>{" "}
+        <a className="text-wrap" href={github}>
+          {github.substring(0, 30)}...
+        </a>
       </p>
       <p className="p-2">
-        <span className="font-bold">Deployed Project:</span>{" "}
-        <a href={url}>{url}</a>
+        <span className="font-bold text-wrap">Deployed Project:</span>{" "}
+        <a href={url}>{url.substring(0, 30)}...</a>
       </p>
-      <p className="p-2">
-        <span className="font-bold">About:</span> {text}
+      <p className="p-2 text-wrap">
+        <span className="font-bold text-wrap">About:</span> {text}
       </p>
     </article>
   );
