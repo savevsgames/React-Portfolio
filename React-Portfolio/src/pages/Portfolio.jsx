@@ -1,5 +1,5 @@
 import { projects } from "../assets/data";
-import PortfolioCard from "../components/PortfolioCard";
+import Project from "../components/Project";
 
 const Portfolio = () => {
   return (
@@ -10,7 +10,7 @@ const Portfolio = () => {
 
       <div className="alignment-class bg-sky-100 py-4">
         {projects.map((project) => {
-          return <PortfolioCard key={project.id} {...project} />;
+          return <Project key={project.id} {...project} />;
         })}
       </div>
     </section>

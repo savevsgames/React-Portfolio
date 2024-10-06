@@ -1,4 +1,12 @@
 import { useState } from "react";
+import regexEmailChecker from "../assets/regexEmailChecker";
+
+const textareaStyle = {
+  minHeight: "200px",
+  minWidth: "300px",
+  resize: "vertical",
+  overflowY: "auto",
+};
 
 const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -15,9 +23,29 @@ const Contact = () => {
     setContact({ ...contact, [e.target.name]: e.target.value });
   };
 
+  const validateField = (e) => {
+    // further validation logic can be added here
+    const { name, value } = e.target;
+    if (name === "name" && value.length < 3) {
+      alert("Name must be at least 3 characters long");
+      return false;
+    } else if (name === "email" && !value.includes("@")) {
+      alert("Email must contain an @ symbol");
+      return false;
+    } else if (name === "message" && value.length < 10) {
+      alert("Message must be at least 10 characters long");
+      return false;
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // further check logic can be added here to validate the form before handling the data
+    const isValid = regexEmailChecker.isValidEmail(contact.email);
+    if (!isValid) {
+      alert("Please enter a valid email address");
+      return;
+    }
     setIsSubmitted(true);
     console.log(contact);
     setSavedContact(contact);
@@ -44,7 +72,8 @@ const Contact = () => {
         <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <label htmlFor="name">Name:</label>
           <input
-            className="border-2 border-slate-500 p-4 rounded-xl shadow-xl"
+            className="border-2 border-slate-500 p-4 rounded-xl shadow-xl caret-sky-950"
+            onBlur={validateField}
             type="text"
             id="name"
             name="name"
@@ -55,7 +84,8 @@ const Contact = () => {
           />
           <label htmlFor="email">Email:</label>
           <input
-            className="border-2 border-slate-500 p-4 rounded-xl shadow-xl"
+            className="border-2 border-slate-500 p-4 rounded-xl shadow-xl caret-sky-500"
+            onBlur={validateField}
             type="email"
             id="email"
             name="email"
@@ -66,7 +96,9 @@ const Contact = () => {
           />
           <label htmlFor="message">Message:</label>
           <textarea
-            className="border-2 border-slate-500 p-4 rounded-xl shadow-xl"
+            onBlur={validateField}
+            style={textareaStyle}
+            className="border-2 border-slate-500 p-4 rounded-xl shadow-xl caret-sky-500"
             id="message"
             name="message"
             value={contact.message}

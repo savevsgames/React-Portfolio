@@ -1,5 +1,5 @@
 import { hero } from "../assets/data";
-import { socials } from "../assets/data";
+import Socials from "./Socials";
 
 const HeroImg = () => {
   return (
@@ -12,20 +12,7 @@ const HeroImg = () => {
           <p className="text-3xl font-bold text-slate-600">
             Full-Stack Developer
           </p>
-          <div className="flex gap-4 mt-8">
-            <ul className="flex flex-row gap-2 flex-wrap basis-3/4 mt-8">
-              {socials.map((social) => {
-                const { id, icon } = social;
-                return (
-                  <a href={social.url} key={id} className="text-sky-900">
-                    <li key={id} className="text-sky-900">
-                      <span>{icon}</span>
-                    </li>
-                  </a>
-                );
-              })}
-            </ul>
-          </div>
+          <Socials />
         </article>
         <article className="flex items-center justify-center">
           <img

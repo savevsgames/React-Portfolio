@@ -8,7 +8,7 @@ const AboutCard = (aboutInfo) => {
         className="bg-white border-2 border-slate-500 rounded-xl p-4 w-full shadow-xl"
       >
         <p className="text-lg font-bold p-4">{heading}</p>
-        <div className="bg-slate-200 px-8 py-4 rounded-xl border-2 border-slate-500">
+        <div className="bg-slate-200 px-8 py-4 rounded-xl border-2 border-slate-500 shadow-xl">
           <img
             src={image}
             alt="Greg Barker"

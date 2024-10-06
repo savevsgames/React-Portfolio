@@ -1,4 +1,4 @@
-import AboutCard from "../components/AboutCard";
+import AboutCard from "./AboutCard";
 import { about } from "../assets/data";
 
 const AboutMe = () => {

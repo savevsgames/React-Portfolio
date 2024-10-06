@@ -1,11 +1,11 @@
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      <Header />
       <main className="bg-sky-100">
         <Outlet />
       </main>

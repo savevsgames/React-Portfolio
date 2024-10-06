@@ -14,7 +14,7 @@ const Downloadable = () => {
       <h1 className="text-4xl font-bold tracking-widest mr-auto text-sky-950">
         Resume
       </h1>
-      <section className="border-2 border-slate-500 p-4 rounded-xl w-full bg-white shadow-xl">
+      <section className="border-2 border-slate-500 p-4 rounded-xl w-full bg-white shadow-xl hover:bg-slate-200">
         <h3 className="text-3xl font-bold tracking-wide pb-4">
           Download Resume
         </h3>

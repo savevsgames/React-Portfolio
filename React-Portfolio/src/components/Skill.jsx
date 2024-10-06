@@ -3,7 +3,7 @@ const Skill = (skill) => {
   return (
     <article
       key={id}
-      className="border-slate-500 border-2 rounded-xl p-4 bg-white shadow-xl"
+      className="border-slate-500 border-2 rounded-xl p-4 bg-white hover:bg-slate-200 shadow-xl"
     >
       <span>{icon2}</span>
       <h3 className="text-xl font-bold">{title}</h3>
